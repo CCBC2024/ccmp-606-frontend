@@ -80,4 +80,26 @@ docker run -d -p 8080:8080 --name charity-donation-frontend charity-donation-fro
 - ETH: https://cloud.google.com/application/web3/faucet/ethereum/sepolia, https://docs.metamask.io/developer-tools/faucet/, https://www.alchemy.com/faucets/ethereum-sepolia,  
 
 ### How to deploy to vercel
+Click the button below to deploy the application to Vercel:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/CCBC2024/ccmp-606-frontend)
+
+Or follow the steps below to deploy the application manually:
+- Create an account on [Vercel](https://vercel.com/).
+- Install Vercel CLI:
+```bash
+npm install -g vercel@latest
+```
+
+- Login to Vercel:
+```bash
+vercel login
+```
+
+- Deploy the application:
+```bash
+vercel --prod
+```
+
+After first deployment, you can update the environment variables in the Vercel dashboard.
+Go to the project settings, then navigate to the Environment Variables section and add the environment variables.
+After adding the environment variables, navigate to the Deployments section and click on the Redeploy button to redeploy the application with the updated environment variables.
